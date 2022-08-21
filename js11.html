@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 11: Image resizing</title>
+    <link rel="stylesheet" href="CSS/js11.css">
+    <script src="JS/js11.js"></script>
+</head>
+<body>
+    <h1>Image resizing</h1>
+    <hr>
+    <div>
+        Sacler:
+    <input type="radio" name="op" value="small" onclick="resizeImg(this.value)">10%
+    <input type="radio" name="op" value="medium" onclick="resizeImg(this.value)">20%
+    <input type="radio" name="op" value="large" onclick="resizeImg(this.value)" checked>50%
+    <input type="radio" name="op" value="larger" onclick="resizeImg(this.value)">100%
+    </div>
+    <img src="IMAGES/pointlobos.jpg" id="image" class="large">
+</body>
+</html>

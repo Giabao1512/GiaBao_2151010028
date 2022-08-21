@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS 07: XỬ LÝ CHUỖI</title>
+	<script src="JS/js07.js"></script>
+</head>
+<body>
+	<table>
+		<caption><h2 id="title">CHƯƠNG TRÌNH XỬ LÝ CHUỖI </h2></caption>
+		<tr>
+			<td>Chuỗi S1:</td>
+			<td>
+				<input type="text" id="txtS1" value="Learning JAVASCRIPT is veRy easy   " size="50">
+			</td>
+		</tr>
+		<tr>
+			<td>Chuỗi S2:</td>
+			<td>
+				<input type="text" id="txtS2" value="javascript" size="50">
+			</td>
+		</tr>
+		<tr>
+			<td>Chuỗi S3:</td>
+			<td>
+				<input type="text" id="txtS3" value="jQuery" size="50">
+			</td>
+		</tr>
+		<tr>
+			<td>Vị trí chèn:</td>
+			<td>
+				<input type="text" id="txtPos" value="0">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<button onclick="normal()">Chuẩn hóa chuỗi</button>
+				<button onclick="reverse()">Đảo chuỗi</button>
+				<button onclick="reset()">Khôi phục</button>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<button onclick="replaceAll()">Thay thế S2 bằng S3</button>
+				<button onclick="insert()">Chèn S2 vào S1</button>
+				<button onclick="deleteAll()">Xóa S2 trong S1</button>
+			</td>
+		</tr>
+	</table>
+	<script>		
+	strOrigin = document.getElementById("txtS1").value;
+	setInterval(function xoayChu(){
+		var str = String(document.getElementById("title").innerHTML);
+    	str = str.substring(str.length - 1) + str.substring(0,str.length - 1);
+    	document.getElementById("title").innerHTML = str;
+	},100);
+	</script>
+</body>
+</html>

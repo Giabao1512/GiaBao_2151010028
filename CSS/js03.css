@@ -1,0 +1,17 @@
+table,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: beige;
+}
+table{
+    width: 60%;
+    margin: 0px auto;
+}
+td:ntn-of-type(odd)
+{
+    width: 60%;
+}
+td:ntn-of-type(even)
+{
+    width: 40%;
+}

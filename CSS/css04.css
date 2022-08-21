@@ -1,0 +1,21 @@
+@charset "urf-8";
+table, th, td{
+    border: 2px solid red;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 50%;
+}
+caption{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+tr:nth-child(odd){
+    background-color: lightgray;
+}
+tr:nth-child(even){
+    background-color: lightslategray;
+}
+th{
+    color:white;
+    background-color: #0000a0;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 06: ĐĂNG KÝ THÀNH VIÊN</title>
+    <script src="JS/js06.js"></script>
+</head>
+<body>
+    <form id="reg" onsubmit="return Dangky()">
+        <caption><h2>ĐĂNG KÝ THÀNH VIÊN</h2></caption>
+        <table>
+            <tr>
+                <td>Tên đăng nhập:</td>
+                <td>
+                    <input type="text" name="username" placeholder="Nhập tên đăng nhập" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td>
+                    <input type="password" name="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>
+                    <input type="date" name="date" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" value="Nam" name="gt" checked>Nam
+                    <input type="radio" value="Nữ" name="gt">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Vấn đề bạn quan tâm</td>
+                <td>
+                    <select name="qt">
+                        <option value="Kinh tế">Kinh tế</option>
+                        <option value="Thể thao">Thể thao</option>
+                        <option value="Văn học nghệ thuật">Văn học nghệ thuật</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Đăng ký">
+                </td>
+                <td>
+                    <input type="reset" value="Hủy">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="thongtin" rows="6" cols="50"></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
